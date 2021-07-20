@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>People Identify</title>
+</head>
+
+<body>
+    
+    <header>
+        <h2>Age Identify</h2>
+    </header>
+
+    <main>
+
+        <section class="container">
+
+            <div class="form">
+
+                <label for="age" class="age-txt"> Ano de nascimento:</label>
+
+                <input type="number" class="age-number" min="0" id="age"> 
+            
+                <p class="label-sex">Sexo:
+
+                    <input 
+                    type="radio"
+                    id="genderMasc"
+                    name="gender"
+                    checked class="check-radio">
+
+                    <label for="genderMasc" class="label-sex">Masulino</label>
+
+                    <input type="radio"
+                    id="genderFam"
+                    name="gender">
+
+                    <label for="genderFam" class="label-sex">Feminino</label>
+
+                </p>
+
+            </div>
+
+            <button type="button" id="button" class="btn" name="send-gender" value="SEND"
+            onclick="verify.check()">CHECK</button>
+            
+            
+            <div class="usertxt" id="usertxt">
+
+                <p id="people-info" class="people-info">
+                    User info here!
+                </p>
+
+            </div>
+
+            <p 
+            class="text-image"
+            id="waiting-txt">Waiting...</p>
+
+            <img src="" 
+            alt=" " 
+            width="150" 
+            height="150"
+            id="photo"
+            class="image"
+            >
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
